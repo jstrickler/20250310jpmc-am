@@ -17,3 +17,8 @@ print()
 # Item separator is empty string
 print(city, temperature, hit_count, average, sep="")
 print()
+
+print(city + ": " + str(temperature))
+print(city, temperature, sep=": ")
+print(f"{city}: {temperature}")
+print(f"{city.upper()}: {temperature}")

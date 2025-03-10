@@ -27,6 +27,8 @@ print("title.strip() = [" +  title.strip() + "]")
 print("title.lstrip() = [" + title.lstrip() + "]")
 print("title.rstrip() = [" + title.rstrip() + "]")
 
+print(f"{title.replace(' ', '') = }")
+print(f"{len(title.replace(' ', '')) = }")
 
 
 

@@ -16,3 +16,10 @@ print()
 # any expression is OK
 print("2 + 2 is {}".format(2 + 2))
 
+x = 89.6
+m = str(x)
+print(type(x), type(m))
+print(x, m)
+print(repr(x), repr(m))
+
+print(f"{2 + 2 = }")
