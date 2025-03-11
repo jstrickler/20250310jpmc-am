@@ -1,5 +1,8 @@
+person = ("Bill", "Gates", "Microsoft", "1955-10-28") # () not needed
 person = "Bill", "Gates", "Microsoft", "1955-10-28"
 print(person, "\n")
+print(f"{type(person) = }")
+
 
 print(person[0], person[1], "\n")
 

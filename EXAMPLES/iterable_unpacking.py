@@ -13,14 +13,18 @@ people = [
     ('Mark', 'Zuckerberg', 'Facebook'),
     ('Sergey', 'Brin', 'Google'),
     ('Larry', 'Page', 'Google'),
-    ('Linux', 'Torvalds', 'Linux'),
+    ('Linus', 'Torvalds', 'Linux', 'junk'),
 ]
 
 for row in people:
-    first_name, last_name, _ = row  # unpack row into variables
+    print(f"{row = }")
+
+    first_name, last_name, company, *junk = row  # unpack row into variables
     print(first_name, last_name)
 print()
 
-for first_name, last_name, _ in people:  # a for loop unpacks if there is more than one variable
-    print(first_name, last_name)
+for first_name, last_name, *_ in people:  # a for loop unpacks if there is more than one variable
+    print(first_name, last_name, _)
 print()
+
+print(first_name, last_name)
