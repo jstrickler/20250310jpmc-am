@@ -8,6 +8,11 @@ set2 = set(data2)
 set1.add('taupe')  
 set2.add('blue')
 set2.add('black')
+set2.add('black')
+set2.add('black')
+set2.add('black')
+set2.add('black')
+set2.add('black')
 
 print(f"{set1 = }")
 print(f"{set2 = }")
@@ -26,3 +31,4 @@ print()
 
 unique_food = set(food)  # Create set from iterable (e.g., list)
 print(f"{unique_food = }")
+
