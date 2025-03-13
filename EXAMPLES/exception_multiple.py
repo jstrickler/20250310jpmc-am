@@ -1,3 +1,6 @@
+class CheeseError(Exception):
+    pass
+
 try:
     x = 5
     y = "cheese"
@@ -7,3 +10,5 @@ try:
 
 except (IOError, TypeError) as err:  # Use a tuple of 2 or more exception types
     print("Naughty programmer! ", err)
+except ZeroDivisionError as err:
+    print("oops!", err)

@@ -6,12 +6,12 @@ from carddeck import CardDeck
 c = CardDeck("Dealer-Name")
 """
 import random
-from card import Card
+from card import PlayingCard
 # or choose one of the following
 # from card_named_tuple import Card
 # from card_dataclass import Card
 
-CardList = list[Card]
+CardList = list[PlayingCard]
 
 class CardDeck:
     """
@@ -39,10 +39,10 @@ class CardDeck:
         self._cards = list()
         for suit in self.SUITS:
             for rank in self.RANKS:
-                card = Card(rank, suit)
+                card = PlayingCard(rank, suit)
                 self._cards.append(card)
 
-    def draw(self) -> Card:
+    def draw(self) -> PlayingCard:
         """
         Retrieve next available card from deck.
 
